@@ -1,21 +1,48 @@
-import { areaPerimetroCirculo, areaPerimetroCuatrdo, areaPerimetroTriangulo } from './operaciones';
+// type arregloNumeros {
+//     impares: number[];
+//     pares: number[];
+// }
 
 
-const figuras = {
-    circulo: {
-        radio:10
-    },
-    triangulo: {
-        base: 65,
-        altura: 50
-    },
-    cuadrado: {
-        lado: 80
-    }
-}
 
-console.log (areaPerimetroCuatrdo(figuras.cuadrado.lado))
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-console. log (areaPerimetroCirculo(figuras.circulo.radio))
+// // crear una funcion que se encargue de obtener los numeros impares y pares
 
-console.log (areaPerimetroTriangulo(figuras.triangulo.base, figuras.triangulo.altura))
+// const ImparesPares = ( numeros: number[]): arregloNumeros  => {
+//     const impares: number[] = [];
+//     const pares: number[] = [];
+
+//     for(let i = 0; i < numeros.length; i++) {
+//         if ( numeros [i] % 2 === 0 ) {
+//             pares.push( numeros[i] )
+//         }else{
+//             impares.push( numeros[i])
+//         }
+//     }
+// const respuesta = {
+//     impares,
+//     pares
+// }
+
+//  return respuesta;
+// }
+
+// let numeros = ImparesPares(numbers);
+
+// console.log(numeros);
+
+
+
+
+// const suma = (a: number, b: number, callback: (suma: number) => void ) => {
+//     let suma = a+b;
+//     callback( suma );
+
+// }
+
+// suma( 18, 18, ( x ) => {
+//     console.log('la suma es: ', x)
+// });
+
+

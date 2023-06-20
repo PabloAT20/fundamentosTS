@@ -1,48 +1,39 @@
-// // interface Generic<T>{
-// //     primero: T;
+// class TallerPC {
 
-// // }
-
-
-// // const genericObject: Generic<boolean, string> = {
-// //     primero: 19,
-// //     segundo: 'nombre'
-// // };
-
-// class Galletas {
-
-//     sabor:string;
-//     forma: string;
-//     decoracion: string;
-
-
-//     constructor(sabor: string, forma:string, decoracion: string){
-//         this.sabor = sabor;
-//         this.forma = forma;
-//         this.decoracion = decoracion;
-//         // console.log('hola desde el constructor de galletas ');
-//     }
-    
-//     decorar(decoracion: string){
-//         this.decoracion = decoracion;
+//     servicios: string[];
+//     constructor() {
+//     this.servicios = [];
 //     }
 
-//     set cambiarsabot(sabor: string){
-//         this.sabor = sabor;
+//     mostrarServicios(servicio: string) {
+//       console.log("Servicios ofrecidos:");
+//       for (servicio of this.servicios) {
+//         console.log(servicio);
+//       }
 //     }
 
-//     get obtenergalletas(){
-//         return 
+//     agregarServicio(servicio: string) {
+//       this.servicios.push(servicio);
+//       console.log(`Se ha agregado el servicio "${servicio}" al taller.`);
 //     }
 
+//     repararProducto(
+//       tipoProducto: string,
+//       nombreProducto: string,
+//       descripcionProblema: string
+//     ): void {
+//       console.log(`Reparando ${tipoProducto} "${nombreProducto}" con el siguiente problema: ${descripcionProblema}`);
+
+//       console.log(`¡${tipoProducto} "${nombreProducto}" reparado correctamente!`);
+//     }
 // }
 
-// const galletasMaria = new Galletas('vainilla', 'cuadrada', ' chispas de chocolate');
+
+// const TallerPablo = new TallerPC ();
+// TallerPablo.agregarServicio("Reemplazo de disco duro");
+// TallerPablo.agregarServicio("Limpieza de ventiladores");
+// TallerPablo.agregarServicio("Instalación de software");
+// TallerPablo.mostrarServicios('servicios');
+// TallerPablo.repararProducto("Laptop", "ASUS", "mantenimineot general");
 
 
-
-// galletasMaria. decorar('aaaaa');
-
-// galletasMaria.cambiarsabot = 'fresa';
-
-// console.log(galletasMaria.sabor);

@@ -1,33 +1,32 @@
 "use strict";
-// // interface Generic<T>{
-// //     primero: T;
-// // }
-// // const genericObject: Generic<boolean, string> = {
-// //     primero: 19,
-// //     segundo: 'nombre'
-// // };
-// class Galletas {
-//     sabor:string;
-//     forma: string;
-//     decoracion: string;
-//     constructor(sabor: string, forma:string, decoracion: string){
-//         this.sabor = sabor;
-//         this.forma = forma;
-//         this.decoracion = decoracion;
-//         // console.log('hola desde el constructor de galletas ');
+// class TallerPC {
+//     servicios: string[];
+//     constructor() {
+//     this.servicios = [];
 //     }
-//     decorar(decoracion: string){
-//         this.decoracion = decoracion;
+//     mostrarServicios(servicio: string) {
+//       console.log("Servicios ofrecidos:");
+//       for (servicio of this.servicios) {
+//         console.log(servicio);
+//       }
 //     }
-//     set cambiarsabot(sabor: string){
-//         this.sabor = sabor;
+//     agregarServicio(servicio: string) {
+//       this.servicios.push(servicio);
+//       console.log(`Se ha agregado el servicio "${servicio}" al taller.`);
 //     }
-//     get obtenergalletas(){
-//         return 
+//     repararProducto(
+//       tipoProducto: string,
+//       nombreProducto: string,
+//       descripcionProblema: string
+//     ): void {
+//       console.log(`Reparando ${tipoProducto} "${nombreProducto}" con el siguiente problema: ${descripcionProblema}`);
+//       console.log(`¡${tipoProducto} "${nombreProducto}" reparado correctamente!`);
 //     }
 // }
-// const galletasMaria = new Galletas('vainilla', 'cuadrada', ' chispas de chocolate');
-// galletasMaria. decorar('aaaaa');
-// galletasMaria.cambiarsabot = 'fresa';
-// console.log(galletasMaria.sabor);
+// const TallerPablo = new TallerPC ();
+// TallerPablo.agregarServicio("Reemplazo de disco duro");
+// TallerPablo.agregarServicio("Limpieza de ventiladores");
+// TallerPablo.agregarServicio("Instalación de software");
+// TallerPablo.mostrarServicios('servicios');
+// TallerPablo.repararProducto("Laptop", "ASUS", "mantenimineot general");
 //# sourceMappingURL=app.js.map

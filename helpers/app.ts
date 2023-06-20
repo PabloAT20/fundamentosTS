@@ -1,48 +1,48 @@
-// type arregloNumeros {
-//     impares: number[];
-//     pares: number[];
-// }
+// // interface Generic<T>{
+// //     primero: T;
+
+// // }
 
 
+// // const genericObject: Generic<boolean, string> = {
+// //     primero: 19,
+// //     segundo: 'nombre'
+// // };
 
-// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// class Galletas {
 
-// // crear una funcion que se encargue de obtener los numeros impares y pares
+//     sabor:string;
+//     forma: string;
+//     decoracion: string;
 
-// const ImparesPares = ( numeros: number[]): arregloNumeros  => {
-//     const impares: number[] = [];
-//     const pares: number[] = [];
 
-//     for(let i = 0; i < numeros.length; i++) {
-//         if ( numeros [i] % 2 === 0 ) {
-//             pares.push( numeros[i] )
-//         }else{
-//             impares.push( numeros[i])
-//         }
+//     constructor(sabor: string, forma:string, decoracion: string){
+//         this.sabor = sabor;
+//         this.forma = forma;
+//         this.decoracion = decoracion;
+//         // console.log('hola desde el constructor de galletas ');
 //     }
-// const respuesta = {
-//     impares,
-//     pares
-// }
+    
+//     decorar(decoracion: string){
+//         this.decoracion = decoracion;
+//     }
 
-//  return respuesta;
-// }
+//     set cambiarsabot(sabor: string){
+//         this.sabor = sabor;
+//     }
 
-// let numeros = ImparesPares(numbers);
-
-// console.log(numeros);
-
-
-
-
-// const suma = (a: number, b: number, callback: (suma: number) => void ) => {
-//     let suma = a+b;
-//     callback( suma );
+//     get obtenergalletas(){
+//         return 
+//     }
 
 // }
 
-// suma( 18, 18, ( x ) => {
-//     console.log('la suma es: ', x)
-// });
+// const galletasMaria = new Galletas('vainilla', 'cuadrada', ' chispas de chocolate');
 
 
+
+// galletasMaria. decorar('aaaaa');
+
+// galletasMaria.cambiarsabot = 'fresa';
+
+// console.log(galletasMaria.sabor);
